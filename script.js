@@ -1,17 +1,17 @@
-let image = document.getElementById("image");
-let nome = document.getElementById("nome");
-let especie = document.getElementById("especie");
-let condicao = document.getElementById("condicao");
+const image = document.getElementById("image");
+const nome = document.getElementById("nome");
+const especie = document.getElementById("especie");
+const condicao = document.getElementById("condicao");
 
-let image1 = document.getElementById("image1");
-let nome1 = document.getElementById("nome1");
-let especie1 = document.getElementById("especie1");
-let condicao1 = document.getElementById("condicao1");
+const image1 = document.getElementById("image1");
+const nome1 = document.getElementById("nome1");
+const especie1 = document.getElementById("especie1");
+const condicao1 = document.getElementById("condicao1");
 
-let image2 = document.getElementById("image2");
-let nome2 = document.getElementById("nome2");
-let especie2 = document.getElementById("especie2");
-let condicao2 = document.getElementById("condicao2");
+const image2 = document.getElementById("image2");
+const nome2 = document.getElementById("nome2");
+const especie2 = document.getElementById("especie2");
+const condicao2 = document.getElementById("condicao2");
 
 traduzirCondicao = (data) => {
   if (data.status == "unknown") {
@@ -25,10 +25,6 @@ traduzirCondicao = (data) => {
 
 gerarValorAletorio = () => {
   return Math.floor(Math.random() * 671);
-};
-
-atualizarPagina = () => {
-  window.location.reload();
 };
 
 pegarPersonagem = () => {
@@ -68,6 +64,11 @@ pegarPersonagem = () => {
       especie2.innerHTML = traduzirCondicao(data[2]);
         
     });
+};
+
+
+atualizarPagina = () => {
+  window.location.reload();
 };
 
 pegarPersonagem()
